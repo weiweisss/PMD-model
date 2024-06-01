@@ -3,7 +3,7 @@ function [B, H] = JonesMatrix(wavelength, t)
     N = 12;
     c = 299792458;
     f = c./ wavelength;
-    w_total = 1.5e6; % rad/s
+    w_total = 1.5e9; % rad/s
     mean_DGD = 3e-12; % ps
     %% 计算B, H矩阵
     B = cell(1, N);
